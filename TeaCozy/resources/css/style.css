@@ -1,0 +1,264 @@
+/*
+
+regular CSS
+
+*/
+
+@media (min-width: 1200px) {
+  body {
+    font-family: helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0;
+  }
+  /* header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+  }
+  header img {
+    padding-left: 10px;
+    height: 50px;
+  }
+  nav a {
+    color: inherit;
+  }
+  nav span {
+    padding: 20px 10px;
+  }
+  /* content */
+  /*hero*/
+  .content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1200px;
+    padding-top: 69px;
+    margin: 0 auto;
+  }
+  #mission {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 1200px;
+    background-image: url("../images/img-mission-background.jpg");
+    justify-content: center;
+  }
+  .headline {
+    background-color: black;
+  }
+  /* Products */
+  #featured_tea {
+    padding-top: 69px;
+  }
+  .products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .tea {
+    display: inline-block;
+    font-weight: bold;
+  }
+  .tea img {
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+  }
+  /* Locations */
+  #locations {
+    padding-top: 69px;
+  }
+  .location_content {
+    height: 500px;
+    width: 1200px;
+    background-image: url("../images/img-locations-background.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .location_boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .location_content h2 {
+    margin: 0px;
+  }
+  .location_box {
+    display: inline-block;
+    background-color: black;
+    opacity: 1;
+    width: 300px;
+    padding: 10px;
+    margin: 15px 20px;
+  }
+  .location_box p {
+    padding: 10px;
+  }
+  /* Contact */
+  #contact {
+    height: 200px;
+  }
+  /* footer */
+  footer {
+    width: 1200px;
+    display: flex;
+    justify-content: left;
+  }
+  footer p {
+    padding-left: 20px;
+    font-size: 18px;
+  }
+}
+
+/*
+
+small format CSS
+
+*/
+
+
+@media (max-width: 1199px){
+  body {
+    font-family: helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0;
+  }
+  /* header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+    min-height: 69px;
+    position: relative;
+    width: 100%;
+    background-color: black;
+    flex-wrap: wrap;
+
+  }
+  header img {
+    padding-left: 10px;
+    height: 50px;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 69px;
+    align-items: center;
+  }
+
+  nav a {
+    color: inherit;
+  }
+  nav span {
+    padding: 20px 10px;
+  }
+  /* content */
+  /*hero*/
+  .content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-basis: 1200px;
+    padding-top: 69px;
+    margin: 0 auto;
+  }
+  #mission {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1200px;
+    max-height: 700px;
+    background-image: url("../images/img-mission-background.jpg");
+    background-position: center;
+    justify-content: center;
+  }
+  .headline {
+    background-color: black;
+  }
+  /* Products */
+  #featured_tea {
+    padding-top: 69px;
+  }
+  .products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .tea {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  .tea img {
+    display: flex;
+    max-height: 200px;
+    flex-basis: 300px;
+    padding: 10px;
+  }
+  /* Locations */
+  #locations {
+    padding-top: 69px;
+  }
+  .location_content {
+    min-height: 500px;
+    flex-basis:1200px;
+    background-image: url("../images/img-locations-background.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .location_boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .location_content h2 {
+    margin: 0px;
+    background-color: black;
+    opacity: 1;
+    padding: 15px;
+  }
+
+  .location_box {
+    display: inline-block;
+    background-color: black;
+    opacity: 1;
+    flex-basis: 300px;
+    min-width: 200px;
+    padding: 10px;
+    margin: 15px 20px;
+  }
+  .location_box p {
+    padding: 10px;
+  }
+  /* Contact */
+  #contact {
+    height: 200px;
+  }
+  /* footer */
+  footer {
+    flex-basis: 1200px;
+    display: flex;
+    justify-content: left;
+  }
+  footer p {
+    padding-left: 20px;
+    font-size: 18px;
+  }
+}
